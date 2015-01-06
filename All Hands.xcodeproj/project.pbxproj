@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		466E2FE11A5B7F38001D87C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E2FE01A5B7F38001D87C4 /* AppDelegate.swift */; };
-		466E2FE31A5B7F38001D87C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E2FE21A5B7F38001D87C4 /* ViewController.swift */; };
 		466E2FE61A5B7F38001D87C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 466E2FE41A5B7F38001D87C4 /* Main.storyboard */; };
 		466E2FE81A5B7F38001D87C4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 466E2FE71A5B7F38001D87C4 /* Images.xcassets */; };
 		466E2FEB1A5B7F38001D87C4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 466E2FE91A5B7F38001D87C4 /* LaunchScreen.xib */; };
@@ -30,6 +29,8 @@
 		466E301F1A5B8066001D87C4 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 466E301A1A5B8066001D87C4 /* ParseFacebookUtils.framework */; };
 		466E30201A5B8066001D87C4 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 466E301B1A5B8066001D87C4 /* ParseUI.framework */; };
 		466E30251A5B809D001D87C4 /* API-Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 466E30241A5B809D001D87C4 /* API-Keys.plist */; };
+		466E302B1A5B82F7001D87C4 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E302A1A5B82F7001D87C4 /* LoadingViewController.swift */; };
+		466E302D1A5B8300001D87C4 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E302C1A5B8300001D87C4 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +47,6 @@
 		466E2FDB1A5B7F38001D87C4 /* All Hands.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "All Hands.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		466E2FDF1A5B7F38001D87C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		466E2FE01A5B7F38001D87C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		466E2FE21A5B7F38001D87C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		466E2FE51A5B7F38001D87C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		466E2FE71A5B7F38001D87C4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		466E2FEA1A5B7F38001D87C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -70,6 +70,9 @@
 		466E301A1A5B8066001D87C4 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		466E301B1A5B8066001D87C4 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		466E30241A5B809D001D87C4 /* API-Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "API-Keys.plist"; sourceTree = "<group>"; };
+		466E30261A5B8226001D87C4 /* All Hands-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "All Hands-Bridging-Header.h"; sourceTree = "<group>"; };
+		466E302A1A5B82F7001D87C4 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		466E302C1A5B8300001D87C4 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				466E2FE01A5B7F38001D87C4 /* AppDelegate.swift */,
-				466E2FE21A5B7F38001D87C4 /* ViewController.swift */,
+				466E302A1A5B82F7001D87C4 /* LoadingViewController.swift */,
+				466E302C1A5B8300001D87C4 /* WelcomeViewController.swift */,
 				466E2FE41A5B7F38001D87C4 /* Main.storyboard */,
 				466E2FE71A5B7F38001D87C4 /* Images.xcassets */,
 				466E2FE91A5B7F38001D87C4 /* LaunchScreen.xib */,
@@ -141,6 +145,7 @@
 		466E2FDE1A5B7F38001D87C4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				466E30261A5B8226001D87C4 /* All Hands-Bridging-Header.h */,
 				466E2FDF1A5B7F38001D87C4 /* Info.plist */,
 				466E30241A5B809D001D87C4 /* API-Keys.plist */,
 			);
@@ -312,8 +317,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				466E2FE31A5B7F38001D87C4 /* ViewController.swift in Sources */,
+				466E302D1A5B8300001D87C4 /* WelcomeViewController.swift in Sources */,
 				466E2FE11A5B7F38001D87C4 /* AppDelegate.swift in Sources */,
+				466E302B1A5B82F7001D87C4 /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +442,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-library-1.6.1",
@@ -443,6 +450,8 @@
 				INFOPLIST_FILE = "All Hands/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "All Hands/All Hands-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -450,6 +459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-library-1.6.1",
@@ -457,6 +467,7 @@
 				INFOPLIST_FILE = "All Hands/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "All Hands/All Hands-Bridging-Header.h";
 			};
 			name = Release;
 		};

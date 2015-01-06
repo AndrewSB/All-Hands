@@ -19,6 +19,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="EYs-ry-l99"/>
+                    <connections>
+                        <segue destination="g5h-jM-zeW" kind="custom" identifier="segueToLogin" customClass="PushNoAnimationSegue" id="7kD-yo-ZTm"/>
+                        <segue destination="a3v-pH-HZv" kind="custom" identifier="segueToMain" customClass="PushNoAnimationSegue" id="IIe-qU-edB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,8 +56,40 @@
                     <view key="view" contentMode="scaleToFill" id="Cky-5u-ZBS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iih-aJ-LuK">
+                                <rect key="frame" x="240" y="357" width="120" height="30"/>
+                                <state key="normal" title="Log In With Email">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginWithEmailHit:" destination="g5h-jM-zeW" eventType="touchUpInside" id="sVH-bb-uUx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6g1-RJ-iIp">
+                                <rect key="frame" x="225" y="274" width="151" height="30"/>
+                                <state key="normal" title="Log In With Facebook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginWithFacebookHit:" destination="g5h-jM-zeW" eventType="touchUpInside" id="M2w-UU-omN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJZ-H1-BQD">
+                                <rect key="frame" x="234" y="445" width="132" height="30"/>
+                                <state key="normal" title="Sign Up With Email">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="signupWithEmailHit:" destination="g5h-jM-zeW" eventType="touchUpInside" id="VZB-ND-Xvz"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="log" destination="6g1-RJ-iIp" id="IaI-uF-Vdw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="49Z-dq-gId" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
